@@ -21,18 +21,19 @@ html, body {
   transform: translate(-50%,-50%);
 }
 
-.spin div:nth-child(1){
+.slide div:nth-child(1){
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background-color: #d7faf8;
+  transform: translate(0%,0%);
 }
 
 
 /****************************
 * animation
 ****************************/
-.spin div:nth-child(1){
+.slide div:nth-child(1){
   animation : slide 2.0s ease 1.0s infinite normal none running;
 }
 
