@@ -1,0 +1,94 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #ff7979;
+}
+
+.container{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.box{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: solid 2px #4bff9e;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.bound div:nth-child(1){
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #d7faf8;
+  transform: translate(0%,0%);
+}
+
+.bound div:nth-child(2){
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #d7faf8;
+  transform: translate(0%,0%);
+}
+
+
+/****************************
+* animation
+****************************/
+.bound div:nth-child(1){
+  animation : bound1 3.0s linear 1.0s infinite normal none running;
+}
+.bound div:nth-child(2){
+  animation : bound2 1.0s linear 1.0s infinite normal none running;
+}
+
+
+/****************************
+* keyframes
+****************************/
+@keyframes bound1{
+  0%{
+    transform: translate(0%,0%);
+  }
+  30%{
+    transform: translate(0%,400%) scale(0.9);
+  }
+  35%{
+    transform: translate(0%,300%);
+  }
+  50%{
+    transform: translate(0%,400%) scale(0.9);
+  }
+  55%{
+    transform: translate(0%,350%);
+  }
+  70%{
+    transform: translate(0%,400%) scale(0.9);
+  }
+  75%{
+    transform: translate(0%,380%);
+  }
+  100%{
+    transform: translate(0%,400%);
+  }
+}
+
+@keyframes bound2{
+  0%{
+    transform: translate(0%,0%) scale(0.9);
+  }
+  50%{
+    transform: translate(0%,400%) scale(0.9);
+  }
+  0%{
+    transform: translate(0%,0%) scale(0.9);
+  }
+}
