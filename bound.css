@@ -15,7 +15,7 @@ html, body {
   position: absolute;
   width: 200px;
   height: 200px;
-  border: solid 2px #4bff9e;
+/*  border: solid 2px #4bff9e;*/
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
@@ -59,19 +59,19 @@ html, body {
     transform: translate(0%,0%);
   }
   30%{
-    transform: translate(0%,400%) scale(0.9);
+    transform: translate(0%,400%) scale(0.95);
   }
-  35%{
+  40%{
     transform: translate(0%,300%);
   }
-  50%{
-    transform: translate(0%,400%) scale(0.9);
-  }
   55%{
+    transform: translate(0%,400%) scale(0.95);
+  }
+  60%{
     transform: translate(0%,350%);
   }
   70%{
-    transform: translate(0%,400%) scale(0.9);
+    transform: translate(0%,400%) scale(0.95);
   }
   75%{
     transform: translate(0%,380%);
@@ -83,12 +83,12 @@ html, body {
 
 @keyframes bound2{
   0%{
-    transform: translate(0%,0%) scale(0.9);
+    transform: translate(0%,0%);
   }
   50%{
-    transform: translate(0%,400%) scale(0.9);
+    transform: translate(0%,400%);
   }
   0%{
-    transform: translate(0%,0%) scale(0.9);
+    transform: translate(0%,0%);
   }
 }
