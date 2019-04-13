@@ -15,52 +15,52 @@ html, body {
   position: absolute;
   width: 200px;
   height: 200px;
-  border: solid 2px #4bff9e;
+/*  border: solid 2px #4bff9e;*/
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
 }
 
-.expand{
+.extend{
   width: 100%;
   height: 100%;
 }
-.expand div{
+.extend div{
   float: left;
   width: 40px;
   height: 100%;
-  background-color: #d7faf8;
   transform: scaleY(0);
-  
 }
-.expand div:nth-child(2n){
+.extend div:nth-child(2n){
   transform-origin: top;
+  background-color: #d7d7fa;
 }
-.expand div:nth-child(2n-1){
+.extend div:nth-child(2n-1){
   transform-origin: bottom;
+  background-color: #d7fad7;
 }
 
 /****************************
 * animation
 ****************************/
-.expand div:nth-child(1){
-  animation : expand 1.0s linear 0.5s infinite alternate none running;
+.extend div:nth-child(1){
+  animation : extend 1.5s linear 0.0s infinite alternate none running;
 }
-.expand div:nth-child(2){
-  animation : expand 1.0s linear 0.7s infinite alternate none running;
+.extend div:nth-child(2){
+  animation : extend 1.5s linear 0.0s infinite alternate none running;
 }
-.expand div:nth-child(3){
-  animation : expand 1.0s linear 0.9s infinite alternate none running;
+.extend div:nth-child(3){
+  animation : extend 1.5s linear 0.0s infinite alternate none running;
 }
-.expand div:nth-child(4){
-  animation : expand 1.0s linear 1.1s infinite alternate none running;
+.extend div:nth-child(4){
+  animation : extend 1.5s linear 0.0s infinite alternate none running;
 }
 
 
 /****************************
 * keyframes
 ****************************/
-@keyframes expand{
+@keyframes extend{
   0%{
     transform: scaleY(0);
   }
